@@ -11,3 +11,18 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+
+from streamlit.connections.base_connection import BaseConnection
+from streamlit.connections.snowflake_connection import SnowflakeConnection
+from streamlit.connections.snowpark_connection import SnowparkConnection
+from streamlit.connections.sql_connection import SQLConnection
+
+ExperimentalBaseConnection = BaseConnection
+
+__all__ = [
+    "BaseConnection",
+    "SnowflakeConnection",
+    "SnowparkConnection",
+    "SQLConnection",
+    "ExperimentalBaseConnection",
+]
